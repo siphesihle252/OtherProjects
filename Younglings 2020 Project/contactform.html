@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=C, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topnav" >
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a class="active" href="contactform.html">Contact Form</a>
+      </div>
+
+    <div class="alert">Your message has been sent</div>
+    <br>
+    <div>
+        <form id="contactform" action="/action_page.php">
+        <p style="text-align: center;">
+        <label for="firstname">
+            <u>First Name</u>
+        </label>
+        <br>
+        <input type="text" id="firstname" placeholder="Your name.." required>
+        <br>
+         <label for="lastname">
+             <u>Surname</u>
+             <br>
+             <input type="text" id="lastname" placeholder="Your surname..">
+         </label>
+         <br>
+         <label for="number">
+             <u>Contact Number</u>
+             <br>
+             <input type="number" id="number" placeholder="Your number..">
+             <br>
+         </label> 
+         <br>
+         <label for="email">
+             <u>Email Address</u>
+             <br>
+             <input type="text" id="email" placeholder="Example: Someones@gmail.com" required>
+             <br>
+         </label>
+         <br>
+         <label for="subject">
+             <u>Message</u>
+             <br>
+             <textarea id="subject" placeholder="Write your thoughts,question/s or your message to me here.." style="height: 200px;"></textarea>
+             <br>
+         </label> 
+         <input type="submit" value="Submit">
+        <br>
+    </p>
+    </form>
+    </div>
+    <div class="bottomfooter">
+        <p>Copyright &copy; 2020 Siphesihle Ntwanambi Pty(Ltd).
+     - Design: <a rel="nofollow noopener" href="https://www.citi.org.za/capaciti/" target="_blank">Capaciti Interns</a></p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
