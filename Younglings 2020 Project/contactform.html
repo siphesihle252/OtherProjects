@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=C, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact form</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body style="background-image: image('contact us.jpg');">
+<body>
 
     <div class="topnav" >
         <a href="index.html">Home</a>
@@ -17,7 +17,6 @@
       <h1 style="font-family: serif;">Contact Me!</h1>
 
     <div class="alert">Your message has been sent</div>
-    <br>
     <div>
         <form class="form" id="contactform" action="/action_page.php">
         <p style="text-align: center;">
@@ -38,21 +37,21 @@
          <label for="number">
              <u style="color: rgb(0, 174, 255); font-size: 20px; font-family: 'Times New Roman', Times, serif;">Contact Number</u>
              <br>
-             <input type="number" id="number" placeholder="Your number..">
+             <input type="text" id="number" placeholder="Your number..">
              <br>
          </label> 
          <br>
          <label for="email">
              <u style="color: rgb(0, 174, 255); font-size: 20px; font-family: 'Times New Roman', Times, serif;">Email Address</u>
              <br>
-             <input type="text" id="email" placeholder="Example: Someones@gmail.com" required>
+             <input type="email" id="email" placeholder="Example:Someones@gmail.com" required>
              <br>
          </label>
          <br>
          <label for="subject">
              <u style="color: rgb(0, 174, 255); font-size: 20px; font-family: 'Times New Roman', Times, serif;">Message</u>
              <br>
-             <textarea id="subject" placeholder="Write your message to me here.." style="height: 85px; width: 54%;"></textarea>
+             <textarea id="subject" placeholder="Write your message to me here.." style="height: 85px;"></textarea>
              <br>
          </label> 
          <input type="submit" value="Submit">
@@ -74,7 +73,7 @@
                 <a rel="follow" href="https://www.younglings.capetown/" target="_blank" style="color:rgb(0, 255, 0);">Younglings</a> and
                 <a rel="follow" href="//https:www.yes4youth.co.za" target="_blank" style="color: gold;">Yes4Youth</a></p>
        </div>
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
