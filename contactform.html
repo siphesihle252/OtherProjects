@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="topnav" >
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+      </div>
+
+      <h1 style="font-family: serif;">Contact Me!</h1>
+
+    <div class="alert">Your message has been sent</div>
+        <div class="wrapper">
+        <form class="form" id="contactform" action="/action_page.php">
+        <p style="text-align: center;">
+        <label for="firstname">
+            <u>First Name</u>
+        </label>
+        <br>
+        <input type="text" id="firstname" placeholder="Your name.." required>
+        <br>
+        <br>
+         <label for="lastname">
+             <u>Surname</u>
+             <br>
+             <input type="text" id="lastname" placeholder="Your surname..">
+         </label>
+         <br>
+         <br>
+         <label for="number">
+             <u>Contact Number</u>
+             <br>
+             <input type="text" id="number" placeholder="Your number..">
+             <br>
+         </label> 
+         <br>
+         <label for="email">
+             <u>Email Address</u>
+             <br>
+             <input type="email" id="email" placeholder="Example:Someones@gmail.com" required>
+             <br>
+         </label>
+         <br>
+         <label for="subject">
+             <u>Message</u>
+             <br>
+             <textarea id="subject" placeholder="Write your message to me here.." style="height: 85px;"></textarea>
+             <br>
+         </label> 
+         <input type="submit" value="Submit">
+        <br>
+    </p>
+    </form>
+
+</div>
+    <div class="flex-container">
+        <div class="hero-image">
+          <div class="col-md-4 footer-item">
+            <p style="text-align:center">
+            <a href="http://facebook.com/" target="_blank"><img src="face.png" class="right"></a>
+            <a href="http://instagram.com/" target="_blank"><img src="insta.png" class="right"></a>
+            <a href="http://twitter.com/" target="_blank"><img src="tweet.png" class="right"></a>
+            </p>
+            <p>Design by: Siphesihle Ntwanambi Pty(Ltd) 2020 &copy;
+                <br>
+                Copyright:<a rel="follow" href="https://www.citi.org.za/capaciti/" target="_blank" style="color: dodgerblue;">Capaciti Interns,</a>
+                <a rel="follow" href="https://www.younglings.capetown/" target="_blank" style="color:rgb(0, 255, 0);">Younglings</a> and
+                <a rel="follow" href="//https:www.yes4youth.co.za" target="_blank" style="color: gold;">Yes4Youth</a></p>
+       </div>
+       <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
